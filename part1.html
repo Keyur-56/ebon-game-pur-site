@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebon Adventure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oxanium', sans-serif;
+            background-color: #0f0f12;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+        }
+        .glow-text {
+            text-shadow: 0 0 8px rgba(16, 185, 129, 0.7);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg py-4 sticky top-0 z-50 border-b border-emerald-500/20">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="logo.jpeg.jpg" alt="Nexus Gaming logo with futuristic hexagonal design and neon green accents" class="h-10 w-10 rounded">
+                <h1 class="text-2xl font-bold glow-text text-emerald-400">ADVENTURE GAMING</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+       
+            <div class="flex items-center space-x-4">
+                
+                <button class="md:hidden">
+                    <img src="bg.png" alt="Mobile menu icon with three white horizontal bars" class="h-6 w-6">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative h-[70vh] overflow-hidden">
+            <img src="bg.png" alt="Forest with neon lights and futuristic hover monster as the game background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/60 flex items-center">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-4 glow-text text-emerald-400">DISCOVER YOUR NEXT <span class="text-white">ADVENTURE</span></h2>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl">Download our new adventure game.</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-emerald-600 hover:bg-emerald-500 px-6 py-3 rounded-md font-bold text-lg transition"> <a href="tp.html" target="_blank">Download</a></button> 
+                    </div>
+                    <p>Android App - 30mb</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Game Characters -->
+        <section id="news" class="py-16 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-3xl font-bold glow-text">🎮 GAME CHARACTERS</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Character Card 1 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden">
+                        <img src="kalasakala.png" alt="A black monster with weapons and superpowers" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-emerald-400">Intial level Monster</span>
+                            <h3 class="font-bold text-xl my-2">Malvorn</h3>
+                            <p class="text-gray-400 mb-4">This monster is one of your dangerous enemy shoot it before it kills you.It has demonic powers and possessed weapons...</p>
+                        </div>
+                    </div>
+                    <!-- Character Card 2 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden">
+                        <img src="sixhands.png" alt="The image of woody devil of the game" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-emerald-400">Advance level enemy</span>
+                            <h3 class="font-bold text-xl my-2">Cursedwood Majesty</h3>
+                            <p class="text-gray-400 mb-4">This one of the most dangerous enemy of the game CURSEDWOOD,who is after everyone who enters the wood which was cursed ages ago...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Character Card 3 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden">
+                        <img src="aalu.png" alt="The hero of the game POTATO-HEAD" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-sm text-emerald-400">The Savior of the forest</span>
+                            <h3 class="font-bold text-xl my-2">Potato-head</h3>
+                            <p class="text-gray-400 mb-4">The POTATO-HEAD will save the forest from the demons like Malvorn as well as the cursed forest monster...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trending Game images -->
+        <section id="trending" class="py-16 bg-gradient-to-b from-gray-900 to-gray-950">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-3xl font-bold glow-text">🔥 SNEAK PEEK</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Game Card 2 -->
+                    <div class="game-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                        <div class="relative">
+                            <img src="FIRE.jpg" alt="Image of villagers sitting next to fire wood" class="w-full">
+                            <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">Villagers</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Villagers are sitting peacefully next to fire wood.</h3>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 3 -->
+                    <div class="game-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                        <div class="relative">
+                            <img src="firewood.jpg" alt="Image of villagers sitting next to fire wood and a demonic evil watching them" class="w-full">
+                            <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">DEVIL</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Suddenly a the demonic evil - Malvorn arrives intruding their peace.</h3>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 4 -->
+                    <div class="game-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                        <div class="relative">
+                            <img src="woodyattack.jpg" alt="Potato head and Cursewood" class="w-full">
+                            <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">HERO</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Potato head is passing by the forest and get trap in the woods by Cursewood.</h3>
+                        </div>
+                    </div>
+
+                    <!-- Game Card 5 -->
+                    <div class="game-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                        <div class="relative">
+                            <img src="aalufight.jpg" alt="Potato head and Cursewood fight" class="w-full">
+                            <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">CURSEWOOD</div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-1">Potato head and Cursewood fight.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Game Genres -->
+<section id="genres" class="py-16 bg-gray-950">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold glow-text mb-12">🎮 Genere of game</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5">
+            <a href="#" class="genre-card bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition duration-300">
+                <div class="w-16 h-16 mx-auto mb-3">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a7a7507b-f0b3-41f0-af39-a50229e5b73e.png" 
+                         alt="Action game icon with explosive graphics and military insignia" 
+                         class="w-full h-full rounded-xl"> <!-- Added rounded-lg here -->
+                </div>
+                <h3 class="font-bold">Action</h3>
+            </a>
+            
+            <a href="#" class="genre-card bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition duration-300">
+               <div class="w-16 h-16 mx-auto mb-3">
+                    <img src="2D.png" 
+                         alt="RPG game icon with sword and shield fantasy symbols" 
+                         class="w-full h-full rounded-xl"> <!-- Added rounded-lg here -->
+                </div>
+                <h3 class="font-bold">2D Game</h3>
+            </a>
+            
+            <a href="#" class="genre-card bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition duration-300">
+                <div class="w-16 h-16 mx-auto mb-3">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/301895c9-5b69-41c8-9b89-41c32f3f63e7.png" 
+                         alt="Strategy game icon with chess pieces and tactical map symbols" 
+                         class="w-full h-full rounded-xl"> <!-- Added rounded-lg here -->
+                </div>
+                <h3 class="font-bold">Strategy</h3>
+            </a>
+                            
+            <a href="#" class="genre-card bg-gray-800 hover:bg-gray-700 rounded-lg p-6 text-center transition duration-300">
+                <div class="w-16 h-16 mx-auto mb-3">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/152aabf2-425c-46b3-aec8-565c7198acab.png" 
+                         alt="Adventure game icon with treasure chest and jungle explorer symbols" 
+                         class="w-full h-full rounded-xl "> <!-- Added rounded-lg here -->
+                </div>
+                <h3 class="font-bold">Adventure</h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="mt-8 flex justify-center">
+                    <button class="bg-emerald-600 hover:bg-emerald-500 px-6 py-3 rounded-md font-bold text-lg transition"> 
+                        <a href="tp.html" target="_blank">DOWLOAD</a>
+                    </button> 
+                </div>
+</section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg py-8 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center text-center">
+                <p class="text-lg">Copyright &copy; Ebon's Adventure - All rights reserved!</p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
